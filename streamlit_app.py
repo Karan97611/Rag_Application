@@ -18,6 +18,7 @@ import streamlit as st
 
 from app.loaders.document_ingestor import (
     ingest_documents
+
 )
 
 from app.chunking.text_chunker import (
@@ -121,6 +122,7 @@ uploaded_files = st.file_uploader(
     "Upload PDFs",
     type=["pdf"],
     accept_multiple_files=True
+
 )
 
 # ---------------------------------
@@ -128,6 +130,7 @@ uploaded_files = st.file_uploader(
 # ---------------------------------
 
 if uploaded_files:
+
 
     os.makedirs(
         "data/documents",
